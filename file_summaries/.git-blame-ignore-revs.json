@@ -1,0 +1,8 @@
+{
+  "bytes": 8319,
+  "extension": "",
+  "first_non_empty_line": "# to hide RuboCop re-layout commits in git blame, do",
+  "line_count": 129,
+  "path": ".git-blame-ignore-revs",
+  "summary": ".git-blame-ignore-revs is a no-extension file with 129 lines and 8319 bytes."
+}

@@ -1,0 +1,8 @@
+{
+  "bytes": 27614,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 627,
+  "path": "app/controllers/planner_controller.rb",
+  "summary": "app/controllers/planner_controller.rb is a .rb file with 627 lines and 27614 bytes."
+}

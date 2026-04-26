@@ -1,0 +1,8 @@
+{
+  "bytes": 95318,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 2224,
+  "path": "app/controllers/calendar_events_api_controller.rb",
+  "summary": "app/controllers/calendar_events_api_controller.rb is a .rb file with 2224 lines and 95318 bytes."
+}

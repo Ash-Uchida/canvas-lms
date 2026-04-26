@@ -1,0 +1,8 @@
+{
+  "bytes": 6434,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 207,
+  "path": "app/controllers/polling/poll_choices_controller.rb",
+  "summary": "app/controllers/polling/poll_choices_controller.rb is a .rb file with 207 lines and 6434 bytes."
+}

@@ -1,0 +1,8 @@
+{
+  "bytes": 14763,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 346,
+  "path": "app/controllers/lti/ims/names_and_roles_controller.rb",
+  "summary": "app/controllers/lti/ims/names_and_roles_controller.rb is a .rb file with 346 lines and 14763 bytes."
+}

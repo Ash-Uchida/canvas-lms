@@ -1,0 +1,8 @@
+{
+  "bytes": 14819,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 462,
+  "path": "app/models/authentication_provider/open_id_connect.rb",
+  "summary": "app/models/authentication_provider/open_id_connect.rb is a .rb file with 462 lines and 14819 bytes."
+}

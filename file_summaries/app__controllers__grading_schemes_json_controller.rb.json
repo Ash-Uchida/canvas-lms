@@ -1,0 +1,8 @@
+{
+  "bytes": 12601,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 340,
+  "path": "app/controllers/grading_schemes_json_controller.rb",
+  "summary": "app/controllers/grading_schemes_json_controller.rb is a .rb file with 340 lines and 12601 bytes."
+}

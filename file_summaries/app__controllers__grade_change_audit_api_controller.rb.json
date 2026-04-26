@@ -1,0 +1,8 @@
+{
+  "bytes": 18064,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 464,
+  "path": "app/controllers/grade_change_audit_api_controller.rb",
+  "summary": "app/controllers/grade_change_audit_api_controller.rb is a .rb file with 464 lines and 18064 bytes."
+}

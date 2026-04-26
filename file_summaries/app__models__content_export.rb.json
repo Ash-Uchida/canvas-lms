@@ -1,0 +1,8 @@
+{
+  "bytes": 22130,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 745,
+  "path": "app/models/content_export.rb",
+  "summary": "app/models/content_export.rb is a .rb file with 745 lines and 22130 bytes."
+}

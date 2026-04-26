@@ -1,0 +1,8 @@
+{
+  "bytes": 13972,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 359,
+  "path": "app/controllers/lti/ims/line_items_controller.rb",
+  "summary": "app/controllers/lti/ims/line_items_controller.rb is a .rb file with 359 lines and 13972 bytes."
+}

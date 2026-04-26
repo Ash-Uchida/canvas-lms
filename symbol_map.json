@@ -1,0 +1,43 @@
+{
+  "build/new-jenkins/rspec-combine-coverage-results.py": {
+    "classes": [],
+    "exports": [],
+    "functions": [
+      "fp",
+      "main"
+    ]
+  },
+  "scripts/build_index.py": {
+    "classes": [],
+    "exports": [],
+    "functions": [
+      "build_index",
+      "main",
+      "parse_args"
+    ]
+  },
+  "scripts/extract_symbols.py": {
+    "classes": [],
+    "exports": [],
+    "functions": [
+      "build_symbol_map",
+      "extract_python_symbols",
+      "is_ignored",
+      "main",
+      "parse_args",
+      "parse_exports"
+    ]
+  },
+  "scripts/summarize_files.py": {
+    "classes": [],
+    "exports": [],
+    "functions": [
+      "is_ignored",
+      "iter_target_files",
+      "main",
+      "parse_args",
+      "summarize_file",
+      "write_summary"
+    ]
+  }
+}

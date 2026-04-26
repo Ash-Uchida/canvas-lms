@@ -1,0 +1,8 @@
+{
+  "bytes": 8326,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 208,
+  "path": "app/controllers/lti/asset_processor_tii_migrations_api_controller.rb",
+  "summary": "app/controllers/lti/asset_processor_tii_migrations_api_controller.rb is a .rb file with 208 lines and 8326 bytes."
+}

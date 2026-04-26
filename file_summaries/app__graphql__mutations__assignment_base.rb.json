@@ -1,0 +1,8 @@
+{
+  "bytes": 15158,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 338,
+  "path": "app/graphql/mutations/assignment_base.rb",
+  "summary": "app/graphql/mutations/assignment_base.rb is a .rb file with 338 lines and 15158 bytes."
+}

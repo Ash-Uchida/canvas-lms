@@ -1,0 +1,8 @@
+{
+  "bytes": 17382,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 546,
+  "path": "app/models/context_module_progression.rb",
+  "summary": "app/models/context_module_progression.rb is a .rb file with 546 lines and 17382 bytes."
+}

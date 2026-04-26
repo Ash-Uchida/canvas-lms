@@ -1,0 +1,8 @@
+{
+  "bytes": 20052,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 512,
+  "path": "app/controllers/ai_experiences_controller.rb",
+  "summary": "app/controllers/ai_experiences_controller.rb is a .rb file with 512 lines and 20052 bytes."
+}

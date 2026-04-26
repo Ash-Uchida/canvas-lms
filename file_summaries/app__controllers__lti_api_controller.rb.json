@@ -1,0 +1,8 @@
+{
+  "bytes": 8512,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 233,
+  "path": "app/controllers/lti_api_controller.rb",
+  "summary": "app/controllers/lti_api_controller.rb is a .rb file with 233 lines and 8512 bytes."
+}

@@ -1,0 +1,8 @@
+{
+  "bytes": 14237,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 378,
+  "path": "app/graphql/mutations/import_outcomes.rb",
+  "summary": "app/graphql/mutations/import_outcomes.rb is a .rb file with 378 lines and 14237 bytes."
+}

@@ -1,0 +1,8 @@
+{
+  "bytes": 14251,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 402,
+  "path": "app/controllers/user_observees_controller.rb",
+  "summary": "app/controllers/user_observees_controller.rb is a .rb file with 402 lines and 14251 bytes."
+}

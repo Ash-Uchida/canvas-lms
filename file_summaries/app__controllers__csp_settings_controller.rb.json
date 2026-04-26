@@ -1,0 +1,8 @@
+{
+  "bytes": 8533,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 231,
+  "path": "app/controllers/csp_settings_controller.rb",
+  "summary": "app/controllers/csp_settings_controller.rb is a .rb file with 231 lines and 8533 bytes."
+}

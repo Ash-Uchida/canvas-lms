@@ -1,0 +1,8 @@
+{
+  "bytes": 33166,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 815,
+  "path": "app/controllers/master_courses/master_templates_controller.rb",
+  "summary": "app/controllers/master_courses/master_templates_controller.rb is a .rb file with 815 lines and 33166 bytes."
+}

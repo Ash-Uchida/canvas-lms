@@ -1,0 +1,8 @@
+{
+  "bytes": 103656,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 2829,
+  "path": "app/models/attachment.rb",
+  "summary": "app/models/attachment.rb is a .rb file with 2829 lines and 103656 bytes."
+}

@@ -1,0 +1,8 @@
+{
+  "bytes": 7276,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 221,
+  "path": "app/controllers/rate_limiting_settings_controller.rb",
+  "summary": "app/controllers/rate_limiting_settings_controller.rb is a .rb file with 221 lines and 7276 bytes."
+}

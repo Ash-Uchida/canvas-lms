@@ -1,0 +1,8 @@
+{
+  "bytes": 20007,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 511,
+  "path": "app/controllers/assignment_overrides_controller.rb",
+  "summary": "app/controllers/assignment_overrides_controller.rb is a .rb file with 511 lines and 20007 bytes."
+}

@@ -1,0 +1,8 @@
+{
+  "bytes": 16698,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 449,
+  "path": "app/controllers/account_notifications_controller.rb",
+  "summary": "app/controllers/account_notifications_controller.rb is a .rb file with 449 lines and 16698 bytes."
+}

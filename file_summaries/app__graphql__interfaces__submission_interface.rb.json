@@ -1,0 +1,8 @@
+{
+  "bytes": 29758,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 770,
+  "path": "app/graphql/interfaces/submission_interface.rb",
+  "summary": "app/graphql/interfaces/submission_interface.rb is a .rb file with 770 lines and 29758 bytes."
+}

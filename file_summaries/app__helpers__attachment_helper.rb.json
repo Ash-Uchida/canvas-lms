@@ -1,0 +1,8 @@
+{
+  "bytes": 13363,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 287,
+  "path": "app/helpers/attachment_helper.rb",
+  "summary": "app/helpers/attachment_helper.rb is a .rb file with 287 lines and 13363 bytes."
+}

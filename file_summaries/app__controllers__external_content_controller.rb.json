@@ -1,0 +1,8 @@
+{
+  "bytes": 7069,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 202,
+  "path": "app/controllers/external_content_controller.rb",
+  "summary": "app/controllers/external_content_controller.rb is a .rb file with 202 lines and 7069 bytes."
+}

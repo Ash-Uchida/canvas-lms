@@ -1,0 +1,8 @@
+{
+  "bytes": 21885,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 619,
+  "path": "app/models/authentication_provider/saml.rb",
+  "summary": "app/models/authentication_provider/saml.rb is a .rb file with 619 lines and 21885 bytes."
+}

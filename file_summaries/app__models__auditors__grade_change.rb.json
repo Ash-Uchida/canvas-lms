@@ -1,0 +1,8 @@
+{
+  "bytes": 16885,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 432,
+  "path": "app/models/auditors/grade_change.rb",
+  "summary": "app/models/auditors/grade_change.rb is a .rb file with 432 lines and 16885 bytes."
+}

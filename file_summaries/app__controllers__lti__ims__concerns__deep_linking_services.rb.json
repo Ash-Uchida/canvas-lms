@@ -1,0 +1,8 @@
+{
+  "bytes": 7010,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 214,
+  "path": "app/controllers/lti/ims/concerns/deep_linking_services.rb",
+  "summary": "app/controllers/lti/ims/concerns/deep_linking_services.rb is a .rb file with 214 lines and 7010 bytes."
+}

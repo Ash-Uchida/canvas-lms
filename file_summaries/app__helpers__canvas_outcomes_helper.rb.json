@@ -1,0 +1,8 @@
+{
+  "bytes": 8771,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 266,
+  "path": "app/helpers/canvas_outcomes_helper.rb",
+  "summary": "app/helpers/canvas_outcomes_helper.rb is a .rb file with 266 lines and 8771 bytes."
+}

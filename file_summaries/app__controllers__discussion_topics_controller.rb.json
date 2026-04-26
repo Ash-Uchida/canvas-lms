@@ -1,0 +1,8 @@
+{
+  "bytes": 87451,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 1999,
+  "path": "app/controllers/discussion_topics_controller.rb",
+  "summary": "app/controllers/discussion_topics_controller.rb is a .rb file with 1999 lines and 87451 bytes."
+}

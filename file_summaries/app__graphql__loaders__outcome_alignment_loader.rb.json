@@ -1,0 +1,8 @@
+{
+  "bytes": 14380,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 264,
+  "path": "app/graphql/loaders/outcome_alignment_loader.rb",
+  "summary": "app/graphql/loaders/outcome_alignment_loader.rb is a .rb file with 264 lines and 14380 bytes."
+}

@@ -1,0 +1,8 @@
+{
+  "bytes": 8011,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 168,
+  "path": "app/controllers/rubric_associations_controller.rb",
+  "summary": "app/controllers/rubric_associations_controller.rb is a .rb file with 168 lines and 8011 bytes."
+}

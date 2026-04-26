@@ -1,0 +1,8 @@
+{
+  "bytes": 38430,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 972,
+  "path": "app/controllers/wiki_pages_api_controller.rb",
+  "summary": "app/controllers/wiki_pages_api_controller.rb is a .rb file with 972 lines and 38430 bytes."
+}

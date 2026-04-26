@@ -1,0 +1,8 @@
+{
+  "bytes": 18799,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 491,
+  "path": "app/models/assignments/needs_grading_count_query.rb",
+  "summary": "app/models/assignments/needs_grading_count_query.rb is a .rb file with 491 lines and 18799 bytes."
+}

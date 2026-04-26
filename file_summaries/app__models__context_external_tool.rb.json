@@ -1,0 +1,8 @@
+{
+  "bytes": 52109,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 1492,
+  "path": "app/models/context_external_tool.rb",
+  "summary": "app/models/context_external_tool.rb is a .rb file with 1492 lines and 52109 bytes."
+}

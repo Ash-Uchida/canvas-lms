@@ -1,0 +1,8 @@
+{
+  "bytes": 22775,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 569,
+  "path": "app/controllers/context_modules_api_controller.rb",
+  "summary": "app/controllers/context_modules_api_controller.rb is a .rb file with 569 lines and 22775 bytes."
+}

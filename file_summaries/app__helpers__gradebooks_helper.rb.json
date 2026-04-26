@@ -1,0 +1,8 @@
+{
+  "bytes": 6771,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 218,
+  "path": "app/helpers/gradebooks_helper.rb",
+  "summary": "app/helpers/gradebooks_helper.rb is a .rb file with 218 lines and 6771 bytes."
+}

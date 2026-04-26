@@ -1,0 +1,8 @@
+{
+  "bytes": 19684,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 508,
+  "path": "app/controllers/developer_keys_controller.rb",
+  "summary": "app/controllers/developer_keys_controller.rb is a .rb file with 508 lines and 19684 bytes."
+}

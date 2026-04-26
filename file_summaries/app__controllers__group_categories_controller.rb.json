@@ -1,0 +1,8 @@
+{
+  "bytes": 45715,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 1174,
+  "path": "app/controllers/group_categories_controller.rb",
+  "summary": "app/controllers/group_categories_controller.rb is a .rb file with 1174 lines and 45715 bytes."
+}

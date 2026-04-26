@@ -1,0 +1,8 @@
+{
+  "bytes": 33512,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 905,
+  "path": "app/models/calendar_event.rb",
+  "summary": "app/models/calendar_event.rb is a .rb file with 905 lines and 33512 bytes."
+}

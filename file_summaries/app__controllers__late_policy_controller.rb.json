@@ -1,0 +1,8 @@
+{
+  "bytes": 7886,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 242,
+  "path": "app/controllers/late_policy_controller.rb",
+  "summary": "app/controllers/late_policy_controller.rb is a .rb file with 242 lines and 7886 bytes."
+}

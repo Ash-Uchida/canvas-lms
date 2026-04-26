@@ -1,0 +1,8 @@
+{
+  "bytes": 12792,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 423,
+  "path": "app/models/collaboration.rb",
+  "summary": "app/models/collaboration.rb is a .rb file with 423 lines and 12792 bytes."
+}

@@ -1,0 +1,8 @@
+{
+  "bytes": 25231,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 565,
+  "path": "app/controllers/learning_object_dates_controller.rb",
+  "summary": "app/controllers/learning_object_dates_controller.rb is a .rb file with 565 lines and 25231 bytes."
+}

@@ -1,0 +1,8 @@
+{
+  "bytes": 7700,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 204,
+  "path": "app/helpers/context_modules_helper.rb",
+  "summary": "app/helpers/context_modules_helper.rb is a .rb file with 204 lines and 7700 bytes."
+}

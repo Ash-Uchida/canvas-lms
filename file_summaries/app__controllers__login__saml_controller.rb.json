@@ -1,0 +1,8 @@
+{
+  "bytes": 23853,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 550,
+  "path": "app/controllers/login/saml_controller.rb",
+  "summary": "app/controllers/login/saml_controller.rb is a .rb file with 550 lines and 23853 bytes."
+}

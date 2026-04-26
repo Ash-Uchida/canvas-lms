@@ -1,0 +1,8 @@
+{
+  "bytes": 11484,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 287,
+  "path": "app/controllers/provisional_grades_controller.rb",
+  "summary": "app/controllers/provisional_grades_controller.rb is a .rb file with 287 lines and 11484 bytes."
+}

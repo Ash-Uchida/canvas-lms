@@ -1,0 +1,8 @@
+{
+  "bytes": 22310,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 504,
+  "path": "app/controllers/lti/ims/dynamic_registration_controller.rb",
+  "summary": "app/controllers/lti/ims/dynamic_registration_controller.rb is a .rb file with 504 lines and 22310 bytes."
+}

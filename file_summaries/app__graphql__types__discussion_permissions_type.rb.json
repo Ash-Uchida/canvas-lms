@@ -1,0 +1,8 @@
+{
+  "bytes": 7312,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 221,
+  "path": "app/graphql/types/discussion_permissions_type.rb",
+  "summary": "app/graphql/types/discussion_permissions_type.rb is a .rb file with 221 lines and 7312 bytes."
+}

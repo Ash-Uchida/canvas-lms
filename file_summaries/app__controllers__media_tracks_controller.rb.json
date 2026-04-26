@@ -1,0 +1,8 @@
+{
+  "bytes": 12441,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 323,
+  "path": "app/controllers/media_tracks_controller.rb",
+  "summary": "app/controllers/media_tracks_controller.rb is a .rb file with 323 lines and 12441 bytes."
+}

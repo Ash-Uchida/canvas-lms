@@ -1,0 +1,8 @@
+{
+  "bytes": 16686,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 403,
+  "path": "app/controllers/feature_flags_controller.rb",
+  "summary": "app/controllers/feature_flags_controller.rb is a .rb file with 403 lines and 16686 bytes."
+}

@@ -1,0 +1,8 @@
+{
+  "bytes": 15975,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 363,
+  "path": "app/graphql/graphql_node_loader.rb",
+  "summary": "app/graphql/graphql_node_loader.rb is a .rb file with 363 lines and 15975 bytes."
+}

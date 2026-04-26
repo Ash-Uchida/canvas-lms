@@ -1,0 +1,8 @@
+{
+  "bytes": 12588,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 357,
+  "path": "app/models/asset_user_access.rb",
+  "summary": "app/models/asset_user_access.rb is a .rb file with 357 lines and 12588 bytes."
+}

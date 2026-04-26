@@ -1,0 +1,8 @@
+{
+  "bytes": 27955,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 682,
+  "path": "app/controllers/communication_channels_controller.rb",
+  "summary": "app/controllers/communication_channels_controller.rb is a .rb file with 682 lines and 27955 bytes."
+}

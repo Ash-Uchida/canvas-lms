@@ -1,0 +1,8 @@
+{
+  "bytes": 9450,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 235,
+  "path": "app/helpers/outcomes_service_authoritative_results_helper.rb",
+  "summary": "app/helpers/outcomes_service_authoritative_results_helper.rb is a .rb file with 235 lines and 9450 bytes."
+}

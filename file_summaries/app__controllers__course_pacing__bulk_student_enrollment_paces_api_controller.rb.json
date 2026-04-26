@@ -1,0 +1,8 @@
+{
+  "bytes": 7644,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 201,
+  "path": "app/controllers/course_pacing/bulk_student_enrollment_paces_api_controller.rb",
+  "summary": "app/controllers/course_pacing/bulk_student_enrollment_paces_api_controller.rb is a .rb file with 201 lines and 7644 bytes."
+}

@@ -1,0 +1,8 @@
+{
+  "bytes": 13929,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 364,
+  "path": "app/controllers/group_memberships_controller.rb",
+  "summary": "app/controllers/group_memberships_controller.rb is a .rb file with 364 lines and 13929 bytes."
+}

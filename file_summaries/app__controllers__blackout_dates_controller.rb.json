@@ -1,0 +1,8 @@
+{
+  "bytes": 6474,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 203,
+  "path": "app/controllers/blackout_dates_controller.rb",
+  "summary": "app/controllers/blackout_dates_controller.rb is a .rb file with 203 lines and 6474 bytes."
+}

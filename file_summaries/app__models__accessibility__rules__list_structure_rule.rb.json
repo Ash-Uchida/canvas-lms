@@ -1,0 +1,8 @@
+{
+  "bytes": 6967,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 229,
+  "path": "app/models/accessibility/rules/list_structure_rule.rb",
+  "summary": "app/models/accessibility/rules/list_structure_rule.rb is a .rb file with 229 lines and 6967 bytes."
+}

@@ -1,0 +1,8 @@
+{
+  "bytes": 8399,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 286,
+  "path": "app/helpers/section_tab_helper.rb",
+  "summary": "app/helpers/section_tab_helper.rb is a .rb file with 286 lines and 8399 bytes."
+}

@@ -1,0 +1,8 @@
+{
+  "bytes": 11153,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 351,
+  "path": "app/models/authentication_provider/ldap.rb",
+  "summary": "app/models/authentication_provider/ldap.rb is a .rb file with 351 lines and 11153 bytes."
+}

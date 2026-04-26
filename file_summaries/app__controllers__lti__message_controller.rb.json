@@ -1,0 +1,8 @@
+{
+  "bytes": 12689,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 311,
+  "path": "app/controllers/lti/message_controller.rb",
+  "summary": "app/controllers/lti/message_controller.rb is a .rb file with 311 lines and 12689 bytes."
+}

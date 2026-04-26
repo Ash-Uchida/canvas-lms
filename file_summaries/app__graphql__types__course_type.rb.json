@@ -1,0 +1,8 @@
+{
+  "bytes": 26761,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 737,
+  "path": "app/graphql/types/course_type.rb",
+  "summary": "app/graphql/types/course_type.rb is a .rb file with 737 lines and 26761 bytes."
+}

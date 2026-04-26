@@ -1,0 +1,8 @@
+{
+  "bytes": 31450,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 825,
+  "path": "app/controllers/role_overrides_controller.rb",
+  "summary": "app/controllers/role_overrides_controller.rb is a .rb file with 825 lines and 31450 bytes."
+}

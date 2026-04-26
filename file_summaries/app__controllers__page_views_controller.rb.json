@@ -1,0 +1,8 @@
+{
+  "bytes": 37393,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 926,
+  "path": "app/controllers/page_views_controller.rb",
+  "summary": "app/controllers/page_views_controller.rb is a .rb file with 926 lines and 37393 bytes."
+}

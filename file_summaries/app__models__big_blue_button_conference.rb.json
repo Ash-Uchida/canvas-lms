@@ -1,0 +1,8 @@
+{
+  "bytes": 15798,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 425,
+  "path": "app/models/big_blue_button_conference.rb",
+  "summary": "app/models/big_blue_button_conference.rb is a .rb file with 425 lines and 15798 bytes."
+}

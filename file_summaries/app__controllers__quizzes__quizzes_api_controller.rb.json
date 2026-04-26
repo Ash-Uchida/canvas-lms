@@ -1,0 +1,8 @@
+{
+  "bytes": 21860,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 611,
+  "path": "app/controllers/quizzes/quizzes_api_controller.rb",
+  "summary": "app/controllers/quizzes/quizzes_api_controller.rb is a .rb file with 611 lines and 21860 bytes."
+}

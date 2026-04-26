@@ -1,0 +1,8 @@
+{
+  "bytes": 8928,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 262,
+  "path": "app/controllers/microsoft_sync/groups_controller.rb",
+  "summary": "app/controllers/microsoft_sync/groups_controller.rb is a .rb file with 262 lines and 8928 bytes."
+}

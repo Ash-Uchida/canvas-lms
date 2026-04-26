@@ -1,0 +1,8 @@
+{
+  "bytes": 9383,
+  "extension": ".flakey_spec_catcher",
+  "first_non_empty_line": "#!/usr/bin/env groovy",
+  "line_count": 299,
+  "path": "Jenkinsfile.selenium.flakey_spec_catcher",
+  "summary": "Jenkinsfile.selenium.flakey_spec_catcher is a .flakey_spec_catcher file with 299 lines and 9383 bytes."
+}

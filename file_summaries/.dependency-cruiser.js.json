@@ -1,0 +1,8 @@
+{
+  "bytes": 27491,
+  "extension": ".js",
+  "first_non_empty_line": "/** @type {import('dependency-cruiser').IConfiguration} */",
+  "line_count": 483,
+  "path": ".dependency-cruiser.js",
+  "summary": ".dependency-cruiser.js is a .js file with 483 lines and 27491 bytes."
+}

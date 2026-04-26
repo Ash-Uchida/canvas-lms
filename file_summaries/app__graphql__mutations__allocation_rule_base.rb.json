@@ -1,0 +1,8 @@
+{
+  "bytes": 7147,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 210,
+  "path": "app/graphql/mutations/allocation_rule_base.rb",
+  "summary": "app/graphql/mutations/allocation_rule_base.rb is a .rb file with 210 lines and 7147 bytes."
+}

@@ -1,0 +1,8 @@
+{
+  "bytes": 6755,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 219,
+  "path": "app/models/authentication_provider/microsoft.rb",
+  "summary": "app/models/authentication_provider/microsoft.rb is a .rb file with 219 lines and 6755 bytes."
+}

@@ -1,0 +1,8 @@
+{
+  "bytes": 10252,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 191,
+  "path": "app/models/conditional_release/override_handler.rb",
+  "summary": "app/models/conditional_release/override_handler.rb is a .rb file with 191 lines and 10252 bytes."
+}

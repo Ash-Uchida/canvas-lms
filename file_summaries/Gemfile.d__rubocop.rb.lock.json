@@ -1,0 +1,8 @@
+{
+  "bytes": 5705,
+  "extension": ".lock",
+  "first_non_empty_line": "PATH",
+  "line_count": 234,
+  "path": "Gemfile.d/rubocop.rb.lock",
+  "summary": "Gemfile.d/rubocop.rb.lock is a .lock file with 234 lines and 5705 bytes."
+}

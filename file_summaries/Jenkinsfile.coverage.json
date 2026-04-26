@@ -1,0 +1,8 @@
+{
+  "bytes": 10436,
+  "extension": ".coverage",
+  "first_non_empty_line": "#!/usr/bin/env groovy",
+  "line_count": 253,
+  "path": "Jenkinsfile.coverage",
+  "summary": "Jenkinsfile.coverage is a .coverage file with 253 lines and 10436 bytes."
+}

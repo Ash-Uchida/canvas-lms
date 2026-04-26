@@ -1,0 +1,8 @@
+{
+  "bytes": 32300,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 712,
+  "path": "app/controllers/content_migrations_controller.rb",
+  "summary": "app/controllers/content_migrations_controller.rb is a .rb file with 712 lines and 32300 bytes."
+}

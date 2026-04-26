@@ -1,0 +1,8 @@
+{
+  "bytes": 14351,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 401,
+  "path": "app/helpers/visibility_sql_helper.rb",
+  "summary": "app/helpers/visibility_sql_helper.rb is a .rb file with 401 lines and 14351 bytes."
+}

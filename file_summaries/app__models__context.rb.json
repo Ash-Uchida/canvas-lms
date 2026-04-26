@@ -1,0 +1,8 @@
+{
+  "bytes": 20608,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 563,
+  "path": "app/models/context.rb",
+  "summary": "app/models/context.rb is a .rb file with 563 lines and 20608 bytes."
+}

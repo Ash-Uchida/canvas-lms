@@ -1,0 +1,8 @@
+{
+  "bytes": 6685,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 200,
+  "path": "app/controllers/login/oauth2_controller.rb",
+  "summary": "app/controllers/login/oauth2_controller.rb is a .rb file with 200 lines and 6685 bytes."
+}

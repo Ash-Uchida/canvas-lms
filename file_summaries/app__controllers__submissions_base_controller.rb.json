@@ -1,0 +1,8 @@
+{
+  "bytes": 13878,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 358,
+  "path": "app/controllers/submissions_base_controller.rb",
+  "summary": "app/controllers/submissions_base_controller.rb is a .rb file with 358 lines and 13878 bytes."
+}

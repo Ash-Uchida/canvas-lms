@@ -1,0 +1,8 @@
+{
+  "bytes": 10760,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 277,
+  "path": "app/controllers/lti/ims/authentication_controller.rb",
+  "summary": "app/controllers/lti/ims/authentication_controller.rb is a .rb file with 277 lines and 10760 bytes."
+}

@@ -1,0 +1,8 @@
+{
+  "bytes": 8916,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 194,
+  "path": "app/controllers/canvadoc_sessions_controller.rb",
+  "summary": "app/controllers/canvadoc_sessions_controller.rb is a .rb file with 194 lines and 8916 bytes."
+}

@@ -1,0 +1,8 @@
+{
+  "bytes": 10330,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 158,
+  "path": "app/controllers/calendars_controller.rb",
+  "summary": "app/controllers/calendars_controller.rb is a .rb file with 158 lines and 10330 bytes."
+}

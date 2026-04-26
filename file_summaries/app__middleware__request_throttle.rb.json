@@ -1,0 +1,8 @@
+{
+  "bytes": 18031,
+  "extension": ".rb",
+  "first_non_empty_line": "# frozen_string_literal: true",
+  "line_count": 461,
+  "path": "app/middleware/request_throttle.rb",
+  "summary": "app/middleware/request_throttle.rb is a .rb file with 461 lines and 18031 bytes."
+}

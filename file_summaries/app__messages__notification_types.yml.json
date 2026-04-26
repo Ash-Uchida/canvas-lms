@@ -1,0 +1,8 @@
+{
+  "bytes": 7109,
+  "extension": ".yml",
+  "first_non_empty_line": "# List of Notification types to support. Initial values are set here.",
+  "line_count": 297,
+  "path": "app/messages/notification_types.yml",
+  "summary": "app/messages/notification_types.yml is a .yml file with 297 lines and 7109 bytes."
+}
