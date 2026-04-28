@@ -157,6 +157,14 @@ NFR-6 (Compatibility): Feature should follow existing Canvas dashboard settings 
 - Focused on representative implementation surfaces rather than broad repository scanning.
 - Captured specific integration paths for UI, API/controller, and tests listed above.
 
+### How to Use the `analyze-repo` Agent for This Feature
+1. Open `agents/analyze-repo.md` and follow its index-first workflow.
+2. Check for index artifacts (`repo_index.json`, `symbol_map.json`, `file_summaries/`) and regenerate them if missing or stale.
+3. Start with targeted index/symbol queries for dashboard cards, user preferences, settings APIs, and dashboard styles.
+4. Read summaries first; only open raw files that confirm candidate integration points.
+5. Capture representative paths in three buckets: UI rendering, API/settings persistence, and tests.
+6. Record unresolved architecture or product decisions as explicit open questions for later spike/stakeholder input.
+
 ## 5. Testing and Verification Plan
 
 ### Unit-Level Expectations
