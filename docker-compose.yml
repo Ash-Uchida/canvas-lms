@@ -8,6 +8,8 @@ services:
       - redis
     environment:
       POSTGRES_PASSWORD: sekret
+    volumes:
+      - .:/usr/src/app
 
   jobs:
     <<: *WEB
