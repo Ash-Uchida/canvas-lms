@@ -19,6 +19,14 @@ services:
     build: ./docker-compose/postgres
     environment:
       POSTGRES_PASSWORD: sekret
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
 
   redis:
     image: redis:alpine
+    volumes:
+      - redis-data:/data
+
+volumes:
+  postgres-data:
+  redis-data:
