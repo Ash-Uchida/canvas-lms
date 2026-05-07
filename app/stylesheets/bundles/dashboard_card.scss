@@ -81,6 +81,9 @@ $ic-DashboardCard-icon-color: $ic-icon-link-color;
   }
 }
 
+
+// ------------------------------------------------ >>>> This is where we're planning on making changes -------------------->>>>
+
 .ic-DashboardCard {
   box-sizing: border-box;
   box-shadow: 0 2px 5px rgba(black, 0.3);
@@ -95,6 +98,17 @@ $ic-DashboardCard-icon-color: $ic-icon-link-color;
   .no-touch & {
     &:hover { box-shadow: 0 4px 10px rgba(black, 0.35); }
   }
+
+  // ===============
+  //  SHAPE VARIANTS
+  // ===============
+  // These modifier classes are toggled by DashboardCardShapeStore.ts. The
+  // class names are produced by dashboardCardShapeClassName() — keep names
+  // here in lockstep with the DashboardCardShape union there.
+  &--shape-rounded { border-radius: 4px; }   // default
+  &--shape-square  { border-radius: 0; }
+  &--shape-soft    { border-radius: 12px; }
+  &--shape-pill    { border-radius: 24px; }
 }
 
 // if there is not enough screen width to fit 2 whole cards (like on a phone) then just have one card fill the whole width

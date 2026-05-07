@@ -29,6 +29,7 @@ import CourseActivitySummaryStore from './CourseActivitySummaryStore'
 import DashboardCardAction from './DashboardCardAction'
 import DashboardCardMenu from './DashboardCardMenu'
 import PublishButton from './PublishButton'
+import {dashboardCardShapeClassName, useDashboardCardShape} from './DashboardCardShapeStore'
 
 const I18n = createI18nScope('dashcards')
 
@@ -147,6 +148,7 @@ export const DashboardCard = ({
   // @ts-expect-error
   const [course, setCourse] = useState(CourseActivitySummaryStore.getStateForCourse(id))
   const settingsToggle = useRef<HTMLButtonElement | null>()
+  const cardShape = useDashboardCardShape()
 
   const handleStoreChange = useCallback(
     // @ts-expect-error
@@ -307,9 +309,11 @@ export const DashboardCard = ({
 
   const CardHeading = headingLevel as keyof JSX.IntrinsicElements
 
+
+  // ------------------------------------------------ >>>> This is where we're planning on making changes -------------------->>>>
   const dashboardCard = (
     <div
-      className="ic-DashboardCard"
+      className={`ic-DashboardCard ${dashboardCardShapeClassName(cardShape)}`}
       style={{opacity: isDragging ? 0 : 1}}
       aria-label={originalName}
       data-testid="draggable-card"

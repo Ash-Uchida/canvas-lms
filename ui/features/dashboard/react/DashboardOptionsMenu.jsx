@@ -26,7 +26,19 @@ import {Menu} from '@instructure/ui-menu'
 import {Button, IconButton} from '@instructure/ui-buttons'
 import {IconMoreLine, IconArrowOpenDownLine} from '@instructure/ui-icons'
 
+import {
+  DASHBOARD_CARD_SHAPES,
+  useDashboardCardShapeStore,
+} from '@canvas/dashboard-card/react/DashboardCardShapeStore'
+
 const I18n = createI18nScope('dashboard')
+
+const SHAPE_LABELS = {
+  rounded: () => I18n.t('Rounded (default)'),
+  square: () => I18n.t('Square'),
+  soft: () => I18n.t('Soft'),
+  pill: () => I18n.t('Pill'),
+}
 
 export default class DashboardOptionsMenu extends React.Component {
   static propTypes = {
@@ -47,12 +59,32 @@ export default class DashboardOptionsMenu extends React.Component {
 
   state = {
     showColorOverlays: !(ENV && ENV.PREFERENCES && ENV.PREFERENCES.hide_dashcard_color_overlays),
+    cardShape: useDashboardCardShapeStore.getState().shape,
+  }
+
+  componentDidMount() {
+    // Keep the menu's selected indicator in sync if the shape changes from
+    // somewhere else (e.g. another tab via storage events, devtools, etc.).
+    this._unsubscribeShape = useDashboardCardShapeStore.subscribe(
+      ({shape}) => this.setState({cardShape: shape}),
+    )
+  }
+
+  componentWillUnmount() {
+    if (this._unsubscribeShape) this._unsubscribeShape()
   }
 
   handleViewOptionSelect = (e, [newlySelectedView]) => {
     if (this.props.view === newlySelectedView) return
     this.props.onDashboardChange(newlySelectedView)
   }
+
+  handleCardShapeSelect = (_e, [newlySelectedShape]) => {
+    if (this.state.cardShape === newlySelectedShape) return
+    useDashboardCardShapeStore.getState().setShape(newlySelectedShape)
+  }
+
+// ------------------------------------------------ >>>> This is where we're planning on making changes -------------------->>>>
 
   handleColorOverlayOptionSelect = showColorOverlays => {
     if (showColorOverlays === this.state.showColorOverlays) return
@@ -148,6 +180,25 @@ export default class DashboardOptionsMenu extends React.Component {
             >
               {I18n.t('Color Overlay')}
             </Menu.Item>
+          </Menu.Group>
+        )}
+        {cardView && <Menu.Separator />}
+        {cardView && (
+          <Menu.Group
+            label={I18n.t('Card Shape')}
+            onSelect={this.handleCardShapeSelect}
+            selected={[this.state.cardShape]}
+            data-testid="card-shape-group"
+          >
+            {DASHBOARD_CARD_SHAPES.map(shape => (
+              <Menu.Item
+                key={shape}
+                value={shape}
+                data-testid={`card-shape-menu-item-${shape}`}
+              >
+                {SHAPE_LABELS[shape]()}
+              </Menu.Item>
+            ))}
           </Menu.Group>
         )}
       </Menu>
