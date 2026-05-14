@@ -21,6 +21,10 @@ import React from 'react'
 import {Text} from '@instructure/ui-text'
 
 import DraggableDashboardCard from './DraggableDashboardCard'
+import {
+  DASHBOARD_CARD_SHAPE_CHANGED_EVENT,
+  useDashboardCardShapeStore,
+} from './DashboardCardShapeStore'
 import DashboardCardBackgroundStore from './DashboardCardBackgroundStore'
 import MovementUtils from './MovementUtils'
 import {showNoFavoritesAlert} from './ConfirmUnfavoriteCourseModal'
@@ -47,6 +51,9 @@ type State = {
 }
 
 export default class DashboardCardBox extends React.Component<Props, State> {
+  _onDashboardCardShapeChanged?: () => void
+  _persistHydrationDone?: () => void
+
   static defaultProps: Partial<Props> = {
     courseCards: [],
     headingLevel: 'h2',
@@ -74,6 +81,13 @@ export default class DashboardCardBox extends React.Component<Props, State> {
   componentDidMount() {
     DashboardCardBackgroundStore.addChangeListener(this.colorsUpdated)
     DashboardCardBackgroundStore.setDefaultColors(this.allCourseAssetStrings())
+    // Dashcards are rendered via legacyRender + react-dnd; zustand updates do not
+    // always re-render children. Re-sync when the global card shape changes.
+    this._onDashboardCardShapeChanged = () => this.forceUpdate()
+    window.addEventListener(DASHBOARD_CARD_SHAPE_CHANGED_EVENT, this._onDashboardCardShapeChanged)
+    this._persistHydrationDone = useDashboardCardShapeStore.persist.onFinishHydration(() => {
+      this.forceUpdate()
+    })
   }
 
   UNSAFE_componentWillReceiveProps(newProps: Props) {
@@ -89,6 +103,13 @@ export default class DashboardCardBox extends React.Component<Props, State> {
 
   componentWillUnmount() {
     DashboardCardBackgroundStore.removeChangeListener(this.colorsUpdated)
+    if (this._onDashboardCardShapeChanged) {
+      window.removeEventListener(
+        DASHBOARD_CARD_SHAPE_CHANGED_EVENT,
+        this._onDashboardCardShapeChanged,
+      )
+    }
+    this._persistHydrationDone?.()
   }
 
   colorsUpdated = () => {

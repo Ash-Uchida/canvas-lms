@@ -18,7 +18,14 @@
 
 import axios from '@canvas/axios'
 import {useScope as createI18nScope} from '@canvas/i18n'
-import React, {type MouseEventHandler, useCallback, useEffect, useRef, useState} from 'react'
+import React, {
+  type CSSProperties,
+  type MouseEventHandler,
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
+} from 'react'
 
 import {showFlashError} from '@instructure/platform-alerts'
 import {assignLocation} from '@canvas/util/globalUtils'
@@ -29,7 +36,16 @@ import CourseActivitySummaryStore from './CourseActivitySummaryStore'
 import DashboardCardAction from './DashboardCardAction'
 import DashboardCardMenu from './DashboardCardMenu'
 import PublishButton from './PublishButton'
-import {dashboardCardShapeClassName, useDashboardCardShape} from './DashboardCardShapeStore'
+import {
+  SILHOUETTE_CARD_DROP_SHADOW,
+  SILHOUETTE_CARD_DROP_SHADOW_HOVER,
+  dashboardCardShapeClassName,
+  dashboardCardShapeHeaderContentStyle,
+  dashboardCardShapeInnerStyle,
+  dashboardCardShapeLinkStyle,
+  dashboardCardShapeWrapStyle,
+  useDashboardCardShape,
+} from './DashboardCardShapeStore'
 
 const I18n = createI18nScope('dashcards')
 
@@ -149,6 +165,9 @@ export const DashboardCard = ({
   const [course, setCourse] = useState(CourseActivitySummaryStore.getStateForCourse(id))
   const settingsToggle = useRef<HTMLButtonElement | null>()
   const cardShape = useDashboardCardShape()
+  const wrapStyle = dashboardCardShapeWrapStyle(cardShape)
+  const usesSilhouetteWrap = wrapStyle != null
+  const [silhouetteHover, setSilhouetteHover] = useState(false)
 
   const handleStoreChange = useCallback(
     // @ts-expect-error
@@ -160,6 +179,10 @@ export const DashboardCard = ({
     CourseActivitySummaryStore.addChangeListener(handleStoreChange)
     return () => CourseActivitySummaryStore.removeChangeListener(handleStoreChange)
   }, [handleStoreChange])
+
+  useEffect(() => {
+    setSilhouetteHover(false)
+  }, [cardShape])
 
   // ===============
   //    ACTIONS
@@ -309,12 +332,24 @@ export const DashboardCard = ({
 
   const CardHeading = headingLevel as keyof JSX.IntrinsicElements
 
+  const silhouetteWrapStyle: CSSProperties | undefined =
+    wrapStyle == null
+      ? undefined
+      : {
+          ...wrapStyle,
+          filter: silhouetteHover ? SILHOUETTE_CARD_DROP_SHADOW_HOVER : SILHOUETTE_CARD_DROP_SHADOW,
+          opacity: isDragging ? 0 : 1,
+        }
 
-  // ------------------------------------------------ >>>> This is where we're planning on making changes -------------------->>>>
-  const dashboardCard = (
+  const dashboardCardInner = (
     <div
       className={`ic-DashboardCard ${dashboardCardShapeClassName(cardShape)}`}
-      style={{opacity: isDragging ? 0 : 1}}
+      onMouseEnter={() => usesSilhouetteWrap && setSilhouetteHover(true)}
+      onMouseLeave={() => usesSilhouetteWrap && setSilhouetteHover(false)}
+      style={{
+        opacity: usesSilhouetteWrap ? 1 : isDragging ? 0 : 1,
+        ...dashboardCardShapeInnerStyle(cardShape),
+      }}
       aria-label={originalName}
       data-testid="draggable-card"
     >
@@ -332,8 +367,15 @@ export const DashboardCard = ({
           hideColorOverlays={hideColorOverlays}
           onClick={headerClick}
         />
-        <a href={href} className="ic-DashboardCard__link">
-          <div className="ic-DashboardCard__header_content">
+        <a
+          href={href}
+          className="ic-DashboardCard__link"
+          style={dashboardCardShapeLinkStyle(cardShape)}
+        >
+          <div
+            className="ic-DashboardCard__header_content"
+            style={dashboardCardShapeHeaderContentStyle(cardShape)}
+          >
             <CardHeading
               className="ic-DashboardCard__header-title ellipsis"
               title={originalName}
@@ -380,6 +422,15 @@ export const DashboardCard = ({
       </nav>
     </div>
   )
+
+  const dashboardCard =
+    wrapStyle == null ? (
+      dashboardCardInner
+    ) : (
+      <div className="ic-DashboardCard__silhouette-wrap" style={silhouetteWrapStyle}>
+        {dashboardCardInner}
+      </div>
+    )
 
   return connectDragSource(connectDropTarget(dashboardCard))
 }

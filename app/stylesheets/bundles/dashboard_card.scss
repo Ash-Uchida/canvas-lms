@@ -81,9 +81,6 @@ $ic-DashboardCard-icon-color: $ic-icon-link-color;
   }
 }
 
-
-// ------------------------------------------------ >>>> This is where we're planning on making changes -------------------->>>>
-
 .ic-DashboardCard {
   box-sizing: border-box;
   box-shadow: 0 2px 5px rgba(black, 0.3);
@@ -105,10 +102,66 @@ $ic-DashboardCard-icon-color: $ic-icon-link-color;
   // These modifier classes are toggled by DashboardCardShapeStore.ts. The
   // class names are produced by dashboardCardShapeClassName() — keep names
   // here in lockstep with the DashboardCardShape union there.
-  &--shape-rounded { border-radius: 4px; }   // default
-  &--shape-square  { border-radius: 0; }
-  &--shape-soft    { border-radius: 12px; }
-  &--shape-pill    { border-radius: 24px; }
+  &--shape-rounded {
+    border-radius: 4px;
+  }
+
+  // Dramatic silhouettes: clip-path on the card. box-shadow does not follow clip-path;
+  // silhouette shadow is applied on `.ic-DashboardCard__silhouette-wrap` (see DashboardCard.tsx).
+  &--shape-circle,
+  &--shape-star,
+  &--shape-cat {
+    border-radius: 0;
+    box-shadow: none;
+
+    .ic-DashboardCard__link {
+      display: block;
+      text-align: center;
+    }
+
+    .ic-DashboardCard__header_content {
+      text-align: center;
+    }
+  }
+
+  // Near-circular crop: radius half of card width (262px), centered near top.
+  &--shape-circle {
+    clip-path: circle(131px at 50% 131px);
+  }
+
+  &--shape-star {
+    clip-path: polygon(
+      50% 0%,
+      63% 38%,
+      100% 38%,
+      69% 62%,
+      82% 100%,
+      50% 76%,
+      18% 100%,
+      31% 62%,
+      0% 38%,
+      37% 38%
+    );
+  }
+
+  &--shape-cat {
+    clip-path: polygon(
+      50% 0%,
+      72% 18%,
+      92% 2%,
+      88% 28%,
+      100% 40%,
+      94% 68%,
+      78% 96%,
+      50% 100%,
+      22% 96%,
+      6% 68%,
+      0% 40%,
+      12% 28%,
+      8% 2%,
+      28% 18%
+    );
+  }
 }
 
 // if there is not enough screen width to fit 2 whole cards (like on a phone) then just have one card fill the whole width

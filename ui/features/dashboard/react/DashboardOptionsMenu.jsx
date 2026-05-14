@@ -28,6 +28,7 @@ import {IconMoreLine, IconArrowOpenDownLine} from '@instructure/ui-icons'
 
 import {
   DASHBOARD_CARD_SHAPES,
+  isDashboardCardShape,
   useDashboardCardShapeStore,
 } from '@canvas/dashboard-card/react/DashboardCardShapeStore'
 
@@ -35,9 +36,9 @@ const I18n = createI18nScope('dashboard')
 
 const SHAPE_LABELS = {
   rounded: () => I18n.t('Rounded (default)'),
-  square: () => I18n.t('Square'),
-  soft: () => I18n.t('Soft'),
-  pill: () => I18n.t('Pill'),
+  circle: () => I18n.t('Circle'),
+  star: () => I18n.t('Star'),
+  cat: () => I18n.t('Cat head'),
 }
 
 export default class DashboardOptionsMenu extends React.Component {
@@ -65,8 +66,8 @@ export default class DashboardOptionsMenu extends React.Component {
   componentDidMount() {
     // Keep the menu's selected indicator in sync if the shape changes from
     // somewhere else (e.g. another tab via storage events, devtools, etc.).
-    this._unsubscribeShape = useDashboardCardShapeStore.subscribe(
-      ({shape}) => this.setState({cardShape: shape}),
+    this._unsubscribeShape = useDashboardCardShapeStore.subscribe(({shape}) =>
+      this.setState({cardShape: shape}),
     )
   }
 
@@ -79,12 +80,20 @@ export default class DashboardOptionsMenu extends React.Component {
     this.props.onDashboardChange(newlySelectedView)
   }
 
-  handleCardShapeSelect = (_e, [newlySelectedShape]) => {
-    if (this.state.cardShape === newlySelectedShape) return
-    useDashboardCardShapeStore.getState().setShape(newlySelectedShape)
+  // InstUI Menu.Group calls onSelect(event, updatedValues, selected, menuItem).
+  // Prefer menuItem.props.value (see PermissionButton menuChange) so we always
+  // get the Menu.Item value, not a mistaken destructuring of the args list.
+  handleCardShapeSelect = (_e, updated, _selected, menuItem) => {
+    const fromItem = menuItem?.props?.value
+    const fromUpdated = Array.isArray(updated) ? updated[0] : undefined
+    const next = fromItem !== undefined && fromItem !== null ? fromItem : fromUpdated
+    if (!isDashboardCardShape(next)) return
+    if (this.state.cardShape === next) return
+    useDashboardCardShapeStore.getState().setShape(next)
+    // Controlled Menu.Group `selected` must update in the same tick as InstUI's
+    // onSelect; do not rely only on the zustand subscription + setState async.
+    this.setState({cardShape: next})
   }
-
-// ------------------------------------------------ >>>> This is where we're planning on making changes -------------------->>>>
 
   handleColorOverlayOptionSelect = showColorOverlays => {
     if (showColorOverlays === this.state.showColorOverlays) return
@@ -191,11 +200,7 @@ export default class DashboardOptionsMenu extends React.Component {
             data-testid="card-shape-group"
           >
             {DASHBOARD_CARD_SHAPES.map(shape => (
-              <Menu.Item
-                key={shape}
-                value={shape}
-                data-testid={`card-shape-menu-item-${shape}`}
-              >
+              <Menu.Item key={shape} value={shape} data-testid={`card-shape-menu-item-${shape}`}>
                 {SHAPE_LABELS[shape]()}
               </Menu.Item>
             ))}
