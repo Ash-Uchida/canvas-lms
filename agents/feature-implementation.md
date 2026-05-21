@@ -158,3 +158,4 @@ If only the instructor can merge: leave item in **In review** or **Ready** if yo
 - [ ] PR merged (or documented merge blocker).
 - [ ] Project item moved to Complete (MCP or manual with honest note).
 - [ ] `agents/tasks/feature-1/implementation-evidence.md` updated with PR link, board story, merge evidence, plan paragraph.
+- [ ] QA agent sign-off: `agents/tasks/feature-1/qa-lab-evidence.md` has passing tests (or justified skip) per `agents/quality-assurance.md`.
