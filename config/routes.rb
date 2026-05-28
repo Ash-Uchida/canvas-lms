@@ -2746,6 +2746,10 @@ CanvasRails::Application.routes.draw do
       put "users/self/bookmarks/:id", action: :update
     end
 
+    scope(controller: :site_guide) do
+      post "users/self/site_guide/chat", action: :chat, as: :site_guide_chat
+    end
+
     scope(controller: :course_nicknames) do
       get "users/self/course_nicknames", action: :index, as: :course_nicknames
       get "users/self/course_nicknames/:course_id", action: :show

@@ -19,6 +19,7 @@
   css_bundle(:instructure_eportfolio) if @eportfolio_view === true
   css_bundle(:new_user_tutorials) if tutorials_enabled?
   js_bundle(:navigation_header) unless @headers == false
+  js_bundle(:site_guide) unless @headers == false
 
   if @domain_root_account&.feature_enabled?(:top_navigation_placement)
     js_env({ INIT_DRAWER_LAYOUT_MUTEX: "init-drawer-layout" })
@@ -319,6 +320,7 @@
     <div class="NewUserTutorialTray__Container"></div>
   <% end %>
   <div id="react-router-portals"></div>
+  <div id="site_guide_mount_point"></div>
 
   <% if microfrontend_overrides %>
     <%= render :partial => 'shared/microfrontend_override_indicator' %>
